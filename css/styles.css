@@ -1,0 +1,101 @@
+
+
+body{
+    background-color: white;
+}
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 40px;
+    background-color:grey;
+    border-radius: 40px;
+    cursor: pointer;
+
+}
+
+
+
+.switch::after{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: url(assets\img\sol.png); /*no funciona*/
+    background-color: yellow;
+    left: 0px;
+    top: 0px;
+
+}
+
+.offscreen{
+    position: absolute;
+}
+
+.switch-active .switch::after {
+    left: 40px; 
+  }
+
+  .dark-mode {
+    background-color: black;
+    color: white;
+  }
+  
+  .dark-mode .switch {
+    background-color: white;
+  }
+  
+  .dark-mode .switch::after {
+    background-color: black;
+    background-image: url(assets\img\luna.png);
+  }
+.toggle-text{
+    font-size: 23px;
+}
+
+.ciudad{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h1{
+ margin-left: 20px;
+ font-size: 45px;
+ font-family: Arial, Helvetica, sans-serif;
+ 
+
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.contenedor{
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+img{
+ width: 100%;
+ padding-top: 50px;
+
+  
+}
+
+h2{
+ 
+    font-size: 90px ;
+    font-weight: 300;
+   
+}
+
+p{
+
+ text-align: left;
+ font-size: 35px;
+ width: 1800px;
+ margin: 20px auto;
+}
